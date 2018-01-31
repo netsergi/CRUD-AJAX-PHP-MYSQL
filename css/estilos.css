@@ -1,0 +1,131 @@
+
+div.panel, h1, body { padding: 0; margin: 0; }
+
+div.panel>div>label, div.panel>div>input, div.panel>div, h1 { float: left; }
+	
+div.panel { height: 55px; 
+			width: 100%;
+            box-shadow: 1px 1px 15px rgba(0,0,0,0.8); 
+            position: fixed;
+            top: 0;
+            z-index: 2;
+        	}						   
+
+div.panel>div { width: 400px; 
+				height: 53px; 
+				border-left: 1px solid lightgray;
+				border-right: 1px solid lightgray;
+			    background: rgba(0,0,0,0.2);
+			    margin-right: 10px; }
+
+div.panel>div>label { background: url('../img/lupa.png') no-repeat top right; 
+				  margin: 13px 0px 10px 20px; 
+				  padding-right: 30px;}
+
+
+div.panel>div>input { border-radius: 10px; 
+				  border: 0;
+				  margin: 13px 5px;}
+
+#añadir,#modificar { width: 450px; }
+
+
+
+div#listado.contenedor div:first-child {
+
+							margin: 10px auto;
+							box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+							width: 90%;
+							font-size: 1.2em;
+}		
+
+.add {
+		   z-index: 1;
+		   width: 500px;
+		   height: 600px;
+		   border-radius: 20px;
+		   padding: 10px;
+		   position: absolute;	
+		   display: none;	
+		   text-align: left;	
+		   background-color: white;	
+		      
+}
+
+div.add > img { width: 80px;
+				height: 80px; }
+
+
+
+.titadd { margin-left: 15px;
+		  color: blue;
+		  font-size: 1.6em; 
+		  text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+		  font-weight: bold; }
+
+div.panel > button {  float: left; 
+					  margin: 8px;
+					}
+
+table { width: 90% !important;
+		margin: 70px auto; 
+		text-align: left; }
+
+table tr:first-child th { 
+						  color: blue; 
+						 }
+
+table td > img { width: 80%; }
+
+table td > button { font-size: 0.9em; 
+					width: 200px;
+					margin-bottom: 10px; }
+
+table td { font-size: 1.2em; 
+		   }
+
+table td:first-child { width: 200px; }
+
+table td { vertical-align: middle !important; }
+
+table th { font-size: 1.2em; }
+
+table th a:hover { color: red; }
+
+td:nth-child(4) { color: green; 
+				  font-weight: bold;
+				}
+
+td:nth-child(6) { width: 200px; }
+
+input[type="text"], label { font-family: 'Cabin', sans-serif; 
+					 font-size: 1.2em;
+					}
+
+input[type="text"], input[type="date"] {  font-style: italic; 
+					  color: blue; 
+					  margin-bottom: 10px;
+				  }
+
+input[type="file"] { border: 1px solid gray;
+					 padding: 10px;
+					 width: 100%;}
+
+input:focus { outline: none; }
+
+
+spam.btncerrar { float: right; 
+				 padding: 0px 12px 3px 12px;
+				 margin: -25px;
+				 font-size: 1.9em;
+				 border: 3px solid white;
+				 box-shadow: 0px 0px 10px rgba(0,0,0,0.5); }
+
+spam.btncerrar:hover { background-color: yellow !important; 
+					   cursor: pointer;
+					   color: black !important; }
+
+hr { margin: 5PX; }
+
+.error { border: 1px solid red !important; }
+
