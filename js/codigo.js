@@ -126,6 +126,7 @@ $(document).ready(function(){
 					}); 						
 			}); 
 		//----------------------------------------	
+<<<<<<< HEAD
 			$(document).on("click", "td>#btneliminar", function(){
 					var este = $(this);
 					var img = $(this).parents("tr").find("td").eq(0).children("img").attr("src");
@@ -145,6 +146,42 @@ $(document).ready(function(){
 					});
 					}								
 				});	
+=======
+			
+			var btneliminar	= $("button#btneliminar");
+			var modalbtnborrar = $("div.modal-footer>button#btnborrar");
+		
+
+			$(document).on("click","button#btneliminar", function(){
+				var id = $(this).data("id");
+				var img = $(this).parents("tr").find("td").eq(0).children("img").attr("src");
+				modalbtnborrar.removeData("id");
+				modalbtnborrar.attr("data-id",id);
+				modalbtnborrar.attr("data-img",img);
+				$("div.modal-body").html("<img src=" + img + ">");
+				$("div.modal-body").append($(this).data("nombre"));
+			});
+
+			btneliminar.click(function(){
+				
+			});
+
+			modalbtnborrar.click(function(){
+				var id = $(this).data("id");
+				var img = $(this).data("img");
+				$(this).attr('data-id','');
+				$.ajax({
+						url: "php/delete.php",
+						type: "POST",
+						dataType: "HTML",
+						data: "id="+ id +"&img=" + img,
+						success: function (data){
+							$("button[data-id="+id+"]").parent().parent().remove();
+						}
+					});
+				});
+
+>>>>>>> Mejor eliminar, y diseño
 		//----------------------------------------
 			function invertir_fecha(strfecha){
 					return strfecha.slice(6,10) + "-" + strfecha.slice(3,5) + "-" + strfecha.slice(0,2);

@@ -129,3 +129,31 @@ hr { margin: 5PX; }
 
 .error { border: 1px solid red !important; }
 
+<<<<<<< HEAD
+=======
+div.modal-body>img {
+	width: 90px;
+	height: 90px;
+	vertical-align: middle;
+	margin-right: 20px;
+}
+
+div.modal-body {
+	font-family: 'Cabin', sans-serif; 
+	font-size: 1.2em;
+
+}
+
+div.modal-footer>span {
+	color: red;
+	font-weight: bold;
+	float: left;
+}
+
+div#listado td>button {
+	width: 50px !important;
+	font-size: 1.4em;
+	border-radius: 30px;
+	margin-right: 10px;
+}
+>>>>>>> Mejor eliminar, y diseño
